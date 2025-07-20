@@ -175,3 +175,43 @@ nav a {
   text-decoration: none;
   border: 1px solid #000;
 }
+/* Responsive layout fix for screens smaller than 768px (mobiles & small tablets) */
+@media (max-width: 768px) {
+  .dg-images {
+    flex-direction: column;      /* Stack the images vertically */
+    align-items: center;         /* Center images on small screens */
+    gap: 20px;                   /* Add space between stacked images */
+  }
+
+  .dg-images img {
+    max-width: 90%;              /* Make images responsive */
+    height: auto;
+  }
+
+  header h1,
+  header h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+  }
+}
